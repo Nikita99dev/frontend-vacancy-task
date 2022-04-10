@@ -1,4 +1,4 @@
-const icons = {
+export const icons = {
   tokens: (
     <svg width='24' height='25' viewBox='0 0 24 25' fill='currentColor' xmlns='http://www.w3.org/2000/svg'>
       <path fill-rule='evenodd' clip-rule='evenodd' d='M7 6.8598C7 6.30752 7.44772 5.8598 8 5.8598H21C21.5523 5.8598 22 6.30752 22 6.8598C22 7.41209 21.5523 7.8598 21 7.8598H8C7.44772 7.8598 7 7.41209 7 6.8598Z' />
