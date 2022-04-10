@@ -101,7 +101,7 @@
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(27px, 1fr) minmax(60px, 5%) minmax(12%, 30%) 23% 17% 17% 10% 6%
+    minmax(27px, 1fr) minmax(60px, 5%) minmax(12%, 30%) 23% 17% 17% 10% 5%
   );
   grid-auto-flow: row;
   gap: 0.5%;
@@ -118,20 +118,6 @@
   max-height: 135px;
 }
 
-@media (max-width: 1200px) {
-  .menu {
-    display: none;
-  }
-  .title {
-    font-size: 14px !important;
-  }
-  .wrapper {
-    border-top-left-radius: 0px;
-  }
-  .tokenElement {
-    gap: 0;
-  }
-}
 .tokenElement:hover {
   border: solid 1.5px #6347f5;
 }
@@ -236,4 +222,47 @@ img {
 .priceChangeBlock {
   display: flex;
   flex-direction: row;
+}
+
+.id {
+  color: #93949d;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.arrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  float: right;
+  margin-right: 5px,
+
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
+  .title {
+    font-size: 14px !important;
+  }
+  .wrapper {
+    border-top-left-radius: 0px;
+  }
+  .arrow {
+    display: none;
+  }
+  .tokenElement {
+    gap: 2px;
+    grid-template-columns: repeat(
+    auto-fill,
+    19px minmax(60px, 5%) minmax(12%, 30%) 23% 17% 17% 10% 
+  )
+  }
+  .id {
+    font-size: 12px !important;
+  }
+  .icon {
+    padding-left: 0px !important;
+  }
 }

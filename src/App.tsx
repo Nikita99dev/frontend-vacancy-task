@@ -5,6 +5,7 @@ import './App.css'
 import { TokenHeading } from './components/TokenHeading'
 import { TokenElement } from './components/TokenElement'
 import { LetterLogo } from './components/LetterLogo'
+import { TokenPage } from './components/TokenPage'
 
 function App() {
   const [category, setCategory] = useState(categories[0])
@@ -55,9 +56,7 @@ function App() {
             <h1>Поиск</h1>
           </div>
         ) : (
-          <div>
-            <h1>{tokens[location].name}</h1>
-          </div>
+          <TokenPage setLocation={setLocation} icons={icons} name={tokens[location].name}/>
         )}
       </div>
     </div>
