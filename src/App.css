@@ -245,6 +245,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 }
 
 .tokenPage > .icon {
@@ -262,16 +263,12 @@ img {
   border-style: hidden;
   background: #ffffff;
 }
-
+h3.title {
+  white-space: initial;
+}
 @media (max-width: 1300px) {
-  .menu {
-    display: none;
-  }
   .title {
     font-size: 14px !important;
-  }
-  .wrapper {
-    border-top-left-radius: 0px;
   }
   .arrows {
     font-size: 15px;
@@ -280,7 +277,7 @@ img {
     gap: 2px;
     grid-template-columns: repeat(
       auto-fill,
-      22px minmax(60px, 5%) minmax(10%, 15%) 20% 17% 17% 10% minmax(3%, 1fr)
+      22px minmax(60px, 5%) minmax(10%, 15%) 20% 17% 17% 13% minmax(3%, 1fr)
     );
     padding-right: 0px;
     padding-left: 5px;
@@ -298,25 +295,58 @@ img {
     font-size: 16px !important;
     font-weight: 450;
   }
+  .menu {
+    padding: 0px;
+    max-width: 300px;
+  }
+  .priceChangeBlock {
+    letter-spacing: -1px;
+  }
+  .priceChangeBlock .title {
+    margin-right: 1px;
+    margin-left: 1px;
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .tokenElement {
     grid-template-columns: repeat(
       auto-fill,
-      22px minmax(60px, 5%) minmax(7%, 18%) 13% 17% 17% 10% minmax(3%, 1fr)
+      22px minmax(60px, 5%) minmax(7%, 18%) 20% 17% 17% 13% minmax(3%, 1fr)
     );
   }
-  .priceChangeBlock {
-    display: none;
+  .priceChangeBlock .title {
+    font-size: 12px !important;
+    margin-right: 1px;
+    margin-left: 1px;
   }
-  .percents {
-    display: none;
+  .priceChangeBlock{
+    letter-spacing: -1px;
   }
   .title {
     font-weight: 400;
   }
   h3.title {
     font-size: 16px !important;
+  }
+  .wrapper {
+    border-top-left-radius: 0px;
+  }
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .percents {
+    display: none;
+  }
+  .priceChangeBlock{
+    display: none;
+  }
+  .tokenElement {
+    grid-template-columns: repeat(
+      auto-fill,
+      22px minmax(60px, 5%) minmax(7%, 18%) 11.5% 15% 15% 13% minmax(0.5%, 1fr)
+    );
   }
 }
