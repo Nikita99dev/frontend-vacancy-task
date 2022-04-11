@@ -377,9 +377,8 @@ h3.title {
   .tokenElement {
     grid-template-columns: repeat(
       1,
-      minmax(41px, 5%) minmax(20px, 18%) 15% 15% 15% 17%
+      minmax(41px, 5%) minmax(50px, 18%) 15% 15% 15% minmax(15%, 30%)
     );
-    height: 60px !important;
   }
   img {
     width: 40px;
@@ -395,5 +394,15 @@ h3.title {
   }
   .idWrapper  {
     display: none;
+  }
+  .wrapper{
+    padding: 2%;
+  }
+  .tokens{
+    padding: 12px;
+  }
+  .tokenHeader {
+    padding-left: 12px;
+    padding-right: 12px
   }
 }
