@@ -403,6 +403,7 @@ h3.title {
   }
   .tokenHeader {
     padding-left: 12px;
-    padding-right: 12px
+    padding-right: 12px;
+    margin-bottom: 8px;
   }
 }
