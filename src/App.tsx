@@ -26,6 +26,7 @@ function App() {
         <LetterLogo />
         {menu.map((item) => (
           <div
+            style={{ background: location === (menu.indexOf(item) === 0?-1:-2)? 'white' :'unset', color: location === (menu.indexOf(item) === 0?-1:-2)?'#6347f5': 'unset' }}
             key={item.id}
             className="menu-item"
             onClick={() => setLocation(item.id === 'tokens' ? -1 : -2)}
@@ -56,7 +57,11 @@ function App() {
             <h1>Поиск</h1>
           </div>
         ) : (
-          <TokenPage setLocation={setLocation} icons={icons} name={tokens[location].name}/>
+          <TokenPage
+            setLocation={setLocation}
+            icons={icons}
+            name={tokens[location].name}
+          />
         )}
       </div>
     </div>

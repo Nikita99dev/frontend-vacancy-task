@@ -62,16 +62,16 @@ export const TokenElement: React.FC<ITokentElement> = ({
       </div>
       <div className="arrow">
         <button
-          style={{ height: '20px', borderStyle: 'hidden', background: '#FFFFFF' }}
+          className='arrowButton'
           onClick={(e) => {
             setOpen((prev: boolean) => !prev)
             e.stopPropagation()
           }}
         >
           {open ? (
-            <IoIosArrowUp style={{ color: '#6347f5', fontSize: '25' }} />
+            <IoIosArrowUp className='arrows' />
           ) : (
-            <IoIosArrowDown style={{ color: '#6347f5', fontSize: '25' }} />
+            <IoIosArrowDown className='arrows' />
           )}
         </button>
       </div>

@@ -1,22 +1,11 @@
 import React from 'react'
+import { ITokenPage } from '../types'
 
-interface ITokenPage {
-  setLocation: React.Dispatch<React.SetStateAction<number>>
-  icons: {
-    tokens: JSX.Element
-    search: JSX.Element
-  }
-  name: string
-}
-export const TokenPage: React.FC<ITokenPage> = ({
-  setLocation,
-  icons,
-  name,
-}) => {
+export const TokenPage: React.FC<ITokenPage> = ({ setLocation, icons, name }) => {
   return (
     <div>
       <div
-        style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'start' }}
+        className='tokenPage'
         onClick={() => setLocation(-1)}
       >
         <div className="icon">{icons.tokens}</div>

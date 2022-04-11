@@ -22,11 +22,12 @@
   margin-inline: 50px;
   margin-top: 50px;
   font-size: 18px;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .menu-item:hover {
-  background: white;
-  color: #6347f5;
+  border: 1px solid #FFFFFF;
 }
 
 .tokens {
@@ -35,6 +36,7 @@
   overflow: hidden;
   overflow-y: auto;
   max-width: 1644px;
+  cursor: pointer;
 }
 
 .token {
@@ -90,6 +92,7 @@
   font-size: 14px;
   padding: 8px;
   color: #93949d;
+  cursor: pointer;
 }
 
 .icon {
@@ -235,8 +238,29 @@ img {
   flex-direction: row;
   justify-content: flex-end;
   float: right;
-  margin-right: 5px,
+  margin-right: 5px;
+}
 
+.tokenPage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tokenPage > .icon {
+  padding-left: 0px !important;
+}
+
+.arrows{
+   color: #6347f5; 
+   font-size: 25px;
+   cursor: pointer;
+}
+
+.arrowButton{
+  height: 20px;
+   border-style: hidden; 
+   background: #FFFFFF;
 }
 
 @media (max-width: 1200px) {
@@ -249,20 +273,29 @@ img {
   .wrapper {
     border-top-left-radius: 0px;
   }
-  .arrow {
-    display: none;
+  .arrows {
+    /* display: none; */
+    font-size: 17px; 
   }
   .tokenElement {
     gap: 2px;
     grid-template-columns: repeat(
     auto-fill,
-    19px minmax(60px, 5%) minmax(12%, 30%) 23% 17% 17% 10% 
-  )
+    19px minmax(60px, 5%) minmax(7%, 18%) 13% 17% 17% 10% minmax(3%, 1fr)
+  );
+  padding-right: 5px;
+  padding-left: 5px;
   }
   .id {
     font-size: 12px !important;
   }
   .icon {
     padding-left: 0px !important;
+  }
+  .priceChangeBlock{
+    display: none;
+  }
+  .percents{
+    display: none;
   }
 }
