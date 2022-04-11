@@ -275,15 +275,15 @@ img {
   }
   .arrows {
     /* display: none; */
-    font-size: 17px; 
+    font-size: 15px; 
   }
   .tokenElement {
     gap: 2px;
     grid-template-columns: repeat(
     auto-fill,
-    19px minmax(60px, 5%) minmax(7%, 18%) 13% 17% 17% 10% minmax(3%, 1fr)
+    22px minmax(60px, 5%) minmax(10%, 25%) 20% 17% 17% 10% minmax(3%, 1fr)
   );
-  padding-right: 5px;
+  padding-right: 0px;
   padding-left: 5px;
   }
   .id {
@@ -292,10 +292,28 @@ img {
   .icon {
     padding-left: 0px !important;
   }
+  .subTitle{
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 900px){
+  .tokenElement {
+  grid-template-columns: repeat(
+    auto-fill,
+    22px minmax(60px, 5%) minmax(7%, 18%) 13% 17% 17% 10% minmax(3%, 1fr)
+  );
+  }
   .priceChangeBlock{
     display: none;
   }
   .percents{
     display: none;
+  }
+  .title {
+    font-weight: 400;
+  }
+   h3.title {
+    font-size: 16px !important;
   }
 }

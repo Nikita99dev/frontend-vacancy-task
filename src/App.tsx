@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { tokens, categories } from './tokens'
 import { menu, icons } from './menu'
 import './App.css'
@@ -6,6 +6,7 @@ import { TokenHeading } from './components/TokenHeading'
 import { TokenElement } from './components/TokenElement'
 import { LetterLogo } from './components/LetterLogo'
 import { TokenPage } from './components/TokenPage'
+import { Search } from './components/Search'
 
 function App() {
   const [category, setCategory] = useState(categories[0])
@@ -53,9 +54,7 @@ function App() {
             </div>
           </>
         ) : location === -2 ? (
-          <div>
-            <h1>Поиск</h1>
-          </div>
+          <Search/>
         ) : (
           <TokenPage
             setLocation={setLocation}
