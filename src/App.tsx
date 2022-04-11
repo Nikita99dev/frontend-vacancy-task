@@ -20,7 +20,6 @@ function App() {
         : tokens,
     )
   }, [category])
-
   return (
     <div className="app">
       <div className="menu">
