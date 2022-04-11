@@ -303,6 +303,7 @@ h3.title {
     letter-spacing: -1px;
   }
   .priceChangeBlock .title {
+    font-size: 14px !important;
     margin-right: 1px;
     margin-left: 1px;
   }
