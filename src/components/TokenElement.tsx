@@ -28,7 +28,7 @@ export const TokenElement: React.FC<ITokentElement> = ({
       style={{ height: open ? '135px' : '91px' }}
       onClick={(e) => setLocation(id)}
     >
-      <div>
+      <div className='idWrapper'>
         <h4 className="id">{`#${id}`}</h4>
       </div>
       <div style={{ marginRight: '5px', width: '70px' }}>

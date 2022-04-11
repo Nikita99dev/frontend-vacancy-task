@@ -321,7 +321,7 @@ h3.title {
     margin-right: 1px;
     margin-left: 1px;
   }
-  .priceChangeBlock{
+  .priceChangeBlock {
     letter-spacing: -1px;
   }
   .title {
@@ -341,13 +341,59 @@ h3.title {
   .percents {
     display: none;
   }
-  .priceChangeBlock{
+  .priceChangeBlock {
     display: none;
   }
   .tokenElement {
     grid-template-columns: repeat(
       auto-fill,
-      22px minmax(60px, 5%) minmax(7%, 18%) 11.5% 15% 15% 13% minmax(0.5%, 1fr)
+      22px minmax(52px, 5%) minmax(7%, 18%) 11.5% 15% 15% 13% minmax(0.5%, 1fr)
     );
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  img {
+    width: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr);
+    border-radius: 12px;
+    padding: 5px;
+  }
+
+  .filters button {
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 4px;
+  }
+  h2 {
+    font-size: 24px !important;
+  }
+  .tokenElement {
+    grid-template-columns: repeat(
+      1,
+      minmax(41px, 5%) minmax(20px, 18%) 15% 15% 15% 17%
+    );
+    height: 60px !important;
+  }
+  img {
+    width: 40px;
+  }
+  .title {
+    white-space: initial;
+  }
+  .arrow {
+    display: none;
+  }
+  .id {
+    display: none;
+  }
+  .idWrapper  {
+    display: none;
   }
 }
